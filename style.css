@@ -1,0 +1,219 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+
+  min-height: 100vh;
+
+  background: url('laptop.jpg');
+  background-size: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#aboutbody{
+  background-color:skyblue;
+  background-image: none;
+}
+nav{
+  padding: 70px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+     /* Styles for screens 349px and below */
+     @media (max-width: 349px) {
+      .vv {
+          padding: 80px;
+           font-size: 10px;
+           margin-left: -30px;
+           background-color: rgb(117, 25, 245);
+      }
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  transition: 0.6s ease-in;
+  border-radius: 10px;
+}
+nav a:hover{
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 20px rgb(18, 75, 145);
+transform: translateY(4px);
+border-radius: 10px solid black;
+
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(57, 43, 146, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 10px;
+
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+}
+.card{
+  color: #fefefe;
+  font-size: 20px;
+  margin-top: 0px;
+  background:linear-gradient(to right,rgba(255, 0, 0, 0.196),rgba(0, 0, 136, 0.352));
+ 
+  padding: 50px;
+  padding-top: 80px;
+  backdrop-filter: blur(px);
+}
+.card2{
+  color: white;
+  font-size: 20px;
+ 
+  background:linear-gradient(to right,rgba(255, 0, 0, 0.196),rgba(0, 0, 136, 0.352));
+ 
+  padding: 50px;
+  padding-top: 80px;
+  backdrop-filter: blur(px);
+}
+.card3{
+  color: white;
+  font-size: 20px;
+ 
+  background:linear-gradient(to right,rgba(255, 0, 0, 0.196),rgba(0, 0, 136, 0.352));
+ margin-top: 0px;
+  padding: 50px;
+  padding-top: 80px;
+  backdrop-filter: blur(px);
+}
+.card6{
+  background-color: black;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 50px;
+  padding-top: 80px;
+  backdrop-filter: blur(px);
+}
+.card:hover,.card2:hover,.card3:hover,.card6:hover{
+  
+}
+footer{
+  padding: 50px;
+  background:linear-gradient(to right,rgba(255, 0, 0, 0.315),rgba(0, 0, 136, 0.603));
+}
+
+
+
+
+
+
+
+
+
+
+
+/* part two */
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  padding: 10px;
+  background:linear-gradient(to right,rgba(255, 0, 0, 0.836),rgba(0, 0, 136, 0.708));
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 4px solid #ccc;
+  border-radius: 12px;
+  width: 0px;
+  opacity: 0;
+  margin-left: 10px;
+  background: linear-gradient(to right,rgba(255, 0, 0, 0.196),rgba(0, 0, 136, 0.352));;
+  transition: width 0.3s ease-in, opacity 0.5s ease;
+}
+
+.search-container:hover .search-bar {
+  width: 200px;
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .search-container:hover .search-bar {
+      width: 100px;
+  }
+}
+
+#demo::after{
+  background-color: rgb(255, 255, 255);
+  content: "";
+  padding: 2px;
+  padding-bottom: 0%;
+  padding-top: 0%;
+
+}
+
+
+#demo{
+  background:linear-gradient(to right ,rgb(255, 0, 217),rgb(5, 173, 229),rgb(93, 5, 255));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 70px;
+  
+  font-family:Arial,  Georgia,"cursive", 'Times New Roman', 
+ 
+}

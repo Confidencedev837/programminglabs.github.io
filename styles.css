@@ -1,0 +1,192 @@
+nav{
+    color: rgb(37, 39, 42);
+    display: flex;
+    background: linear-gradient(to right, #312260, #402b70, #ff66ff, #4d3254);
+    padding: 90px;
+    margin: -10px;
+}
+   /* Styles for screens 349px and below */
+   @media (max-width: 349px) {
+    nav{
+        padding: 0px;
+        font-size: 14px;
+        margin: 50px;
+    }
+  }
+a:active{
+    background-color: chartreuse;
+    color: darkblue;
+}
+input{
+    background-color: rgb(253, 253, 253);
+    border-radius: 20px;
+    border:1px solid black;
+    padding: 2px;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+input:active,input:hover{
+    border-radius: 90px;
+    transform: translateY(5px);
+    
+}
+a{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    margin: 0;
+ 
+  
+}
+a:hover{
+    transform: translateY(6px);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgb(255, 0, 55);
+    
+    background:linear-gradient(to right, #602257, #402b70, #ff66ff, #4d3254) ;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+
+    }
+}
+button{
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    margin:0px  15px;
+}
+.menu-icon {     
+    /* confidence dont touch this,this is the part that makes it hide or show */
+    display: non;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(8, 6, 6);
+}
+.hello.show {
+    display: flex;
+}
+.hello {
+    display: none;
+    min-width: 400px;
+    background-color: rgba(178, 178, 178, 0);
+    padding: 15px;
+}
+.logo{
+min-width: 10%;
+overflow: hidden;
+border-radius: 10%;
+border: 20px solid rgb(255, 250, 250);
+
+}
+header.show{
+    background-color: rgb(202, 61, 61);
+    display: block;
+    border: 4px solid green;
+}
+/* part two */
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+ 
+  
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #1b1a1a;
+  }
+  
+ 
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color:#000000;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background: linear-gradient(to right,rgba(0, 0, 255, 0.137),rgba(0, 0, 255, 0.452),rgba(116, 174, 255, 0.525),rgba(0, 200, 255, 0.63) );
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in;
+  }
+  .fakeimg:hover{
+transform: translatey(-15px);
+align-items: flex-end;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background: linear-gradient(to right, #510069, #0046a9, #663877, #223f88);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+
+
+

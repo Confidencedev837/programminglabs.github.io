@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <meta description="we make coding easy and understandable">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming lab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <!-- Fallback for older browsers -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <script src="script.js"></script>
+  
+</head>
+<body>
+  <nav>
+    
+    <ul class="sidebar">
+
+      <div class="search-container">
+        <div class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+        </div>
+        <input type="text" class="search-bar" placeholder="Search items...">
+    </div>
+
+      
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="indexb.html">Home</a></li>
+      <li><a href="products.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="forum.html">Forum</a></li>
+      <li><a href="source.html">Source codes</a></li>
+    </ul>
+    <ul>
+      <div class="search-container">
+        <div class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+        </div>
+        <input type="text" class="search-bar" placeholder="Search items...">
+    </div>
+
+    <li class="vv"><div class="noz"><img src="favicon2.png"><style>img{ width: 50px;display:block;}</style><a href="https://chat.whatsapp.com/Hi8Wk0uN0Hz6zvvXTYXQF2">Programming lab</a></div></li>
+      <li class="hideOnMobile"><a href="indexb.html">Home</a></li>
+      <li class="hideOnMobile"><a href="products.html">Projects</a></li>
+      <li class="hideOnMobile"><a href="about.html">About</a></li>
+      <li class="hideOnMobile"><a href="forum.html">Forum</a></li>
+      <li class="hideOnMobile"><a href="source.html">Source codes</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <script>
+       var i=-1;
+    var txt='Welcome to programming lab';
+    var speed=250;
+
+    function typeWriter(){
+        if ( i<txt.length){
+            document.getElementById("demo").innerHTML+=txt.charAt(i);
+            i++;
+            setTimeout(typeWriter,speed);
+        }
+        }
+       window.onload=typeWriter
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+   <div class="card">
+   <strong><div id="demo"><b></b></div></strong>
+    <h2>Welcome to Our School.............</h2>
+    <h5>launch date.., Dec 7, 2022</h5>
+    
+    <p>Our Vision</p>
+    <p>we are centred on making programming very easy and understandable,join us today to learn it is totally free.plus you will get acess to quality information and a forum to help and norture your talent in programming ,the world of tech is changing every day join us.</p>
+  <hr>
+   
+  </div>
+  <div class="card2">
+    <h2>Its free,so get started</h2>
+    <h5>Effective date.., June 30, 2024</h5>
+    
+    <p>Our Mission</p>
+    <p>we are centred on making programming very easy and understandable,join us today to learn it is totally free.plus you will get acess to quality information and a forum to help and norture your talent in programming ,the world of tech is changing every day join us.</p>
+  <hr>
+    <marquee>CODING IS FUN TRY IT THE OPPORTUNITIES ARE VAST  join us today it is free ,no charges ..............</marquee>
+  </div>
+
+  <div class="card">
+    <h2>Don't have a laptop,no problem</h2>
+    <h5>launch date.., Dec 7, 2022</h5>
+    
+    <p>Our Scope</p>
+    <p>Teamwork in programming knows no bounds! Whether you have a laptop or just a phone, you can join us. Use the TrebEdit app to code on the go. Together, we can innovate, solve problems, and build amazing projects. Every device is a gateway to creativity—let’s code as a team!"</p>
+  </div>
+
+  <div class="card3">
+    <h2>Meet the Team</h2>
+    <h5>Inspired to help others</h5>
+    
+    <p>Our Vision</p>
+    <p>we are centred on making programming very easy and understandable,join us today to learn it is totally free.plus you will get acess to quality information and a forum to help and norture your talent in programming ,the world of tech is changing every day join us.</p>
+  <hr>
+  </div>
+  <div class="card">
+    <section>
+    <h2>Get more knowledge that money can't buy</h2>
+    <h5></h5>
+    
+    <p>Our Vision</p>
+    <p>we are centred on making programming very easy and understandable,join us today to learn it is totally free.plus you will get acess to quality information and a forum to help and norture your talent in programming ,the world of tech is changing every day join us.</p>
+  <hr>
+  <section>
+  </div>
+  <div class="card6">
+    <section>
+    <h2>Your thoughts matter to us</h2>
+    <h5></h5>
+    
+    <p>Our Vision</p>
+    <p>we are centred on making programming very easy and understandable,join us today to learn it is totally free.plus you will get acess to quality information and a forum to help and norture your talent in programming ,the world of tech is changing every day join us.</p>
+  <hr>
+  <section>
+  </div>
+
+  <div class="card">
+    <h3>Popular Post</h3>
+    <div class="fakeimg"><p><img src="https://ideogram.ai/assets/progressive-image/balanced/response/tE1w7iBZQlOxHmHtnQmsEA" width="100%"><br>"Unlock your potential with programming! Embrace the challenge, innovate, and create solutions that shape the future. Every line of code brings new possibilities and growth. Dive into the world of programming, where your imagination is the limit. Start today, learn, experiment, and let your creativity soar!"</p></div>
+    <div class="fakeimg"><p><img src="https://ideogram.ai/assets/progressive-image/balanced/response/wSIFchU1T6Wm-pv-a5JLrg" width="100%"><br>"Collaborate and innovate through programming! Together, we can tackle complex problems, share diverse ideas, and build amazing solutions. Teamwork in coding leads to greater creativity and success. Join hands, share knowledge, and push boundaries. Let's create something incredible as a united team!"</p></div>
+    <div class="fakeimg"><p><img src="https://ideogram.ai/assets/progressive-image/balanced/response/FGkjhfOcRw6taCjAFXuciw" width="100%"><br>"Teamwork in programming knows no bounds! Whether you have a laptop or just a phone, you can join us. Use the TrebEdit app to code on the go. Together, we can innovate, solve problems, and build amazing projects. Every device is a gateway to creativity—let’s code as a team!"</p></div>
+  </div>
+  <div class="card">
+    <h3>Follow Us</h3>
+    <p>"Stay connected with us on social media! Follow our handles for the latest updates, exclusive content, and behind-the-scenes looks. Join our community today and be the first to know about our exciting news and events. Don't miss out on all the fun—follow us now!😀😀😀"</p>
+  </div>
+
+  <footer>
+    @2024 copyrights .All rights reserved
+  </footer>
+</body>
+<style>
+
+</style>
+
+
+</html>

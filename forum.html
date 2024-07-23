@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="8x7nip3QrDLHdSyJmyTJUR5dENhzwHCUdCz79XysqFg" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <!-- Fallback for older browsers -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <script src="script.js"></script>
+  
+</head>
+<body>
+  <nav>
+    
+    <ul class="sidebar">
+        <div class="search-container">
+            <div class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+            </div>
+            <input type="text" class="search-bar" placeholder="Search items...">
+        </div>
+    
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="indexb.html">Home</a></li>
+      <li><a href="products.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="forum.html">Forum</a></li>
+      <li><a href="source.html">Source codes</a></li>
+    </ul>
+    <ul>
+      <div class="search-container">
+        <div class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+        </div>
+        <input type="text" class="search-bar" placeholder="Search items...">
+    </div>
+
+    <li><div><img src="favicon2.png"><style>img{ width: 50px;display:block;}</style><a href="https://chat.whatsapp.com/Hi8Wk0uN0Hz6zvvXTYXQF2">Programming lab</a></div></li>
+      <li class="hideOnMobile"><a href="indexb.html">Home</a></li>
+      <li class="hideOnMobile"><a href="products.html">Projects</a></li>
+      <li class="hideOnMobile"><a href="about.html">About</a></li>
+      <li class="hideOnMobile"><a href="forum.html">Forum</a></li>
+      <li class="hideOnMobile"><a href="source.html">Source codes</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+  <div class="card">
+    <h2>Join our forum by visiting our whatsapp channel</h2>
+    <h5>launch date.., Dec 7, 2022</h5>
+    
+    <p></p>
+    <p>There you will get updates about our recent projects and ideas</p><br>
+  <a class="ab" href="https://whatsapp.com/channel/0029VagDe6WHQbRw8fANPG2x">Join Now</a>
+    <hr>
+  <hr>
+  <div class="cardp">
+    <p>Join our whatsapp group forfree classes</p><br>
+    <a class="ab" href="https://chat.whatsapp.com/Hi8Wk0uN0Hz6zvvXTYXQF2">Join our group</a>
+      <hr>
+      <div></div>
+    <style>
+        .ab{
+            padding: 15px;
+            border: 4px solid white;
+            text-decoration: none;
+            border-radius: 12px;
+            background-color:yellow;
+            box-shadow: 9px 10px 4px white;
+            transition:0.5s ease-in;
+          
+           
+        }
+        .cardp{
+            margin-top:50px;
+        }
+        .ab:hover{
+            background-color:rgb(0, 255, 13) ;
+            color:rgb(255, 0, 0);
+            box-shadow: 9px 10px 4px rgb(255, 0, 0);
+            border: 4px solid rgb(0, 0, 0);
+            transform: translateX(4px);
+        }
+    </style>
+</body>
+</html>
